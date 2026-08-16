@@ -13,15 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kim Minjeong — Environment Artist",
+  title: {
+    default: "MinJeong Kim — 3D Environment Artist",
+    template: "%s — MinJeong Kim",
+  },
   description:
-    "Portfolio of Kim Minjeong, 3D environment / background modeler for games and film.",
+    "Portfolio of MinJeong Kim, 3D environment artist. Game-ready environments, modular kits and props built in Unreal Engine.",
+  openGraph: {
+    title: "MinJeong Kim — 3D Environment Artist",
+    description: "Game-ready environments, modular kits and props.",
+    images: ["/works/forgotten-breath/cover.webp"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="ko"
+      lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

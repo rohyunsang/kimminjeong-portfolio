@@ -1,0 +1,428 @@
+[
+  {
+    "slug": "weind-up",
+    "hash_id": "rlxNzG",
+    "title": "WeIND UP – Game Environment Project (Team Project)",
+    "permalink": "https://www.artstation.com/artwork/rlxNzG",
+    "published_at": "2026-05-21T21:46:35.784-05:00",
+    "description": "<p>WeIND UP is a team-based cooperative puzzle game environment project currently in development.</p>\n\n<p>I translated 2D environment concept art into a fully realized 3D world in Unreal Engine, focusing on establishing mood, spatial composition, and visual coherence.\n<br />My work involved building the environment through mesh placement, prop creation, and lighting, ensuring atmospheric consistency and clear gameplay readability for cooperative puzzle interaction.</p>\n\n<p>Level design was handled by a dedicated level designer, and my responsibility was to execute and enhance the environment within the established layout through visual and atmospheric direction.</p>\n\n<p><a href=\"https://x.com/Studio_Gravitia?s=20\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://x.com/Studio_Gravitia?s=20</a></p>",
+    "software": [
+      "Unreal Engine",
+      "3ds Max",
+      "Substance 3D Painter",
+      "Photoshop"
+    ],
+    "categories": [
+      "Game Art",
+      "Games and Real-Time 3D Environment Art",
+      "Gameplay & Level Design"
+    ],
+    "assets": [
+      {
+        "file": "/works/weind-up/01.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/606/large/minjeong-kim-2-wu-1-1-01.webp"
+      },
+      {
+        "file": "/works/weind-up/02.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/608/large/minjeong-kim-2-wu-1-1-02.webp"
+      },
+      {
+        "file": "/works/weind-up/cover.webp",
+        "type": "cover",
+        "w": 2048,
+        "h": 1152,
+        "src": "https://cdna.artstation.com/p/assets/covers/images/099/265/642/large/minjeong-kim-minjeong-kim-somenail-up.webp"
+      },
+      {
+        "file": "/works/weind-up/03.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/610/large/minjeong-kim-2-wu-1-1-03.webp"
+      },
+      {
+        "file": "/works/weind-up/04.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/611/large/minjeong-kim-2-wu-1-1-04.webp"
+      },
+      {
+        "file": "/works/weind-up/05.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/614/large/minjeong-kim-2-wu-1-1-05.webp"
+      },
+      {
+        "file": "/works/weind-up/06.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/617/large/minjeong-kim-2-wu-1-1-06.webp"
+      },
+      {
+        "file": "/works/weind-up/07.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/618/large/minjeong-kim-2-wu-1-2-01.webp"
+      },
+      {
+        "file": "/works/weind-up/08.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/619/large/minjeong-kim-2-wu-1-2-02.webp"
+      },
+      {
+        "file": "/works/weind-up/09.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/621/large/minjeong-kim-2-wu-1-2-03.webp"
+      },
+      {
+        "file": "/works/weind-up/10.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/622/large/minjeong-kim-2-wu-1-2-04.webp"
+      },
+      {
+        "file": "/works/weind-up/11.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/624/large/minjeong-kim-2-wu-3-1-prop.webp"
+      },
+      {
+        "file": "/works/weind-up/12.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/625/large/minjeong-kim-2-wu-3-2-prop.webp"
+      },
+      {
+        "file": "/works/weind-up/13.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/627/large/minjeong-kim-2-wu-3-3-prop.webp"
+      },
+      {
+        "file": "/works/weind-up/14.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/628/large/minjeong-kim-2-wu-3-4-prop.webp"
+      },
+      {
+        "file": "/works/weind-up/15.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/629/large/minjeong-kim-2-wu-3-5-prop-shot.webp"
+      },
+      {
+        "file": "/works/weind-up/16.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/631/large/minjeong-kim-2-wu-3-6-prop.webp"
+      }
+    ]
+  },
+  {
+    "slug": "medieval-props",
+    "hash_id": "AZVYlX",
+    "title": "Props of Medieval Village",
+    "permalink": "https://www.artstation.com/artwork/AZVYlX",
+    "published_at": "2026-05-21T21:16:42.331-05:00",
+    "description": "<p>This is my personal 3D environment project featuring a semi-realistic medieval village.\n<br />The scene was built using a modular</p>\n\n<p>The composition and atmosphere were developed based on the following concept art:\n<br /><a href=\"https://www.artstation.com/artwo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://www.artstation.com/artwo</a></p>\n\n<p>Additional references were used to study mood, structure, and environmental density to enhance realism and world-building.</p>\n\n<p>Production time: approximately 3–4 months (including iterative refinement).</p>\n\n<p>No AI-generated assets were used.</p>",
+    "software": [
+      "3ds Max",
+      "ZBrush",
+      "Unreal Engine",
+      "Substance 3D Painter",
+      "Photoshop",
+      "Marvelous Designer",
+      "Marmoset Toolbag"
+    ],
+    "categories": [
+      "Game Art",
+      "Games and Real-Time 3D Environment Art",
+      "Gameplay & Level Design"
+    ],
+    "assets": [
+      {
+        "file": "/works/medieval-props/cover.webp",
+        "type": "cover",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/covers/images/099/264/997/large/minjeong-kim-minjeong-kim-1-mf-02.webp"
+      },
+      {
+        "file": "/works/medieval-props/01.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/008/large/minjeong-kim-1-mf-01.webp"
+      },
+      {
+        "file": "/works/medieval-props/02.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/009/large/minjeong-kim-1-mf-02.webp"
+      },
+      {
+        "file": "/works/medieval-props/03.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/012/large/minjeong-kim-1-mf-03.webp"
+      },
+      {
+        "file": "/works/medieval-props/04.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/016/large/minjeong-kim-1-mf-04.webp"
+      },
+      {
+        "file": "/works/medieval-props/05.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/017/large/minjeong-kim-1-mf-05.webp"
+      },
+      {
+        "file": "/works/medieval-props/06.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/021/large/minjeong-kim-1-mf-06.webp"
+      },
+      {
+        "file": "/works/medieval-props/07.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/023/large/minjeong-kim-1-mf-07.webp"
+      },
+      {
+        "file": "/works/medieval-props/08.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/024/large/minjeong-kim-1-mf-08.webp"
+      },
+      {
+        "file": "/works/medieval-props/09.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/048/large/minjeong-kim-1-mf-011.webp"
+      },
+      {
+        "file": "/works/medieval-props/10.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdna.artstation.com/p/assets/images/images/099/265/050/large/minjeong-kim-1-mf-022.webp"
+      },
+      {
+        "file": "/works/medieval-props/11.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/053/large/minjeong-kim-1-mf-033.webp"
+      },
+      {
+        "file": "/works/medieval-props/12.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/265/057/large/minjeong-kim-1-mf-044.webp"
+      }
+    ]
+  },
+  {
+    "slug": "forgotten-breath",
+    "hash_id": "DLzPvn",
+    "title": "The Forgotten Breath of a Medieval Village",
+    "permalink": "https://www.artstation.com/artwork/DLzPvn",
+    "published_at": "2025-04-06T19:48:24.395-05:00",
+    "description": "<p>'The Forgotten Breath of a Medieval Village' is my first Game 3D environment work.\n<br />The scene was built using a modular</p>\n\n<p>The composition and atmosphere were developed based on the following concept art:\n<br /><a href=\"https://www.artstation.com/artwork/8bx4vO\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://www.artstation.com/artwork/8bx4vO</a></p>\n\n<p>Additional references were used to study mood, structure, and environmental density to enhance realism and world-building.</p>\n\n<p>Production time: approximately 3–4 months (including iterative refinement).</p>\n\n<p>No AI-generated assets were used.</p>",
+    "software": [
+      "3ds Max",
+      "ZBrush",
+      "Marvelous Designer",
+      "Unreal Engine",
+      "Marmoset Toolbag",
+      "Substance 3D Painter",
+      "Photoshop"
+    ],
+    "categories": [
+      "Game Art",
+      "Games and Real-Time 3D Environment Art",
+      "Gameplay & Level Design"
+    ],
+    "assets": [
+      {
+        "file": "/works/forgotten-breath/01.jpg",
+        "type": "image",
+        "w": 2560,
+        "h": 1400,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/086/748/459/large/archo-archo-highresscreenshot-2025-03-25-11-40-47.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/02.jpg",
+        "type": "image",
+        "w": 2560,
+        "h": 1400,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/748/464/large/archo-archo-highresscreenshot-2025-03-05-21-02-22.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/cover.webp",
+        "type": "cover",
+        "w": 1920,
+        "h": 1050,
+        "src": "https://cdnb.artstation.com/p/assets/covers/images/098/703/765/large/minjeong-kim-minjeong-kim-archo-archo-highresscreenshot00000-1.webp"
+      },
+      {
+        "file": "/works/forgotten-breath/03.jpg",
+        "type": "image",
+        "w": 1920,
+        "h": 1123,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/748/468/large/archo-archo-somenail-325-in.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/04.jpg",
+        "type": "image",
+        "w": 2560,
+        "h": 1400,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/086/748/473/large/archo-archo-highresscreenshot-2025-03-05-21-02-33.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/05.jpg",
+        "type": "image",
+        "w": 2560,
+        "h": 1400,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/748/476/large/archo-archo-highresscreenshot-2025-03-05-21-02-55.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/06.jpg",
+        "type": "image",
+        "w": 2560,
+        "h": 1400,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/086/748/479/large/archo-archo-highresscreenshot00002.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/07.jpg",
+        "type": "image",
+        "w": 2489,
+        "h": 1400,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/086/748/481/large/archo-archo-highresscreenshot-2025-03-25-14-12-54.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/08.jpg",
+        "type": "image",
+        "w": 2489,
+        "h": 1400,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/748/486/large/archo-archo-highresscreenshot-2025-03-16-22-30-17.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/09.jpg",
+        "type": "image",
+        "w": 2560,
+        "h": 1400,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/086/748/491/large/archo-archo-highresscreenshot00003.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/10.jpg",
+        "type": "image",
+        "w": 2560,
+        "h": 1400,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/750/846/large/archo-highresscreenshot-2025-04-07-12-14-01.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/11.jpg",
+        "type": "image",
+        "w": 1920,
+        "h": 1050,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/748/492/large/archo-archo-highresscreenshot00001.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/12.jpg",
+        "type": "image",
+        "w": 2489,
+        "h": 1400,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/086/748/495/large/archo-archo-highresscreenshot-2025-03-25-15-03-11.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/13.jpg",
+        "type": "image",
+        "w": 2489,
+        "h": 1400,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/748/496/large/archo-archo-highresscreenshot-2025-03-25-14-06-50.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/14.jpg",
+        "type": "image",
+        "w": 1920,
+        "h": 1050,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/748/504/large/archo-archo-highresscreenshot00005.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/15.jpg",
+        "type": "image",
+        "w": 1920,
+        "h": 1050,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/748/506/large/archo-archo-highresscreenshot00006.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/16.jpg",
+        "type": "image",
+        "w": 2560,
+        "h": 1400,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/086/748/511/large/archo-archo-highresscreenshot00000-1.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/17.jpg",
+        "type": "image",
+        "w": 2560,
+        "h": 1400,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/748/514/large/archo-archo-highresscreenshot-2025-03-24-15-04-39-1.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/18.jpg",
+        "type": "image",
+        "w": 2560,
+        "h": 1400,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/748/820/large/archo-detaillight-326.jpg"
+      },
+      {
+        "file": "/works/forgotten-breath/19.gif",
+        "type": "image",
+        "w": 1920,
+        "h": 1050,
+        "src": "https://cdna.artstation.com/p/assets/images/images/086/750/722/original/archo-upgrade.gif"
+      },
+      {
+        "file": "/works/forgotten-breath/20.webp",
+        "type": "image",
+        "w": 1920,
+        "h": 1080,
+        "src": "https://cdnb.artstation.com/p/assets/images/images/099/264/879/large/minjeong-kim-1-mf-12-1.webp"
+      }
+    ]
+  }
+]

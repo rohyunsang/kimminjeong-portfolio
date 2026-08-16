@@ -1,19 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0b0b0d;
-  --foreground: #ececec;
-  --muted: #8a8a93;
-  --accent: #d6b36a;
-  --line: #1f1f24;
+  --background: #ffffff;
+  --foreground: #111111;
+  --muted: #6b6b6b;
+  --line: #d9d9d9;
+  --line-strong: #111111;
+  --accent: #14883a;
+  --paper: #f4f4f2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
-  --color-accent: var(--accent);
   --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-paper: var(--paper);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -25,5 +29,24 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-geist-sans), Helvetica, Arial, system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+@utility label {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+@utility hairline {
+  border-color: var(--line);
 }
