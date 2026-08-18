@@ -247,6 +247,7 @@ export const works: Work[] = [
     "title": "WeIND UP — Escape from ToyCorp",
     "short": "WeIND UP",
     "year": "2026",
+    "period": "2025.06 - 2026.08",
     "type": "Team Project · Studio Gravitia",
     "role": "Environment Art — mesh placement, prop creation, lighting",
     "engine": "Unreal Engine 5",
