@@ -341,6 +341,78 @@ a {
   background: #050505;
 }
 
+.project-image-index {
+  padding: 0.75rem 0 0.65rem;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.project-image-index-heading {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  color: var(--muted);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.project-image-index ol {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  padding-bottom: 0.65rem;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scrollbar-color: var(--foreground) var(--line);
+  scrollbar-width: thin;
+}
+
+.project-image-index ol::-webkit-scrollbar {
+  height: 0.35rem;
+}
+
+.project-image-index ol::-webkit-scrollbar-track {
+  background: var(--line);
+}
+
+.project-image-index ol::-webkit-scrollbar-thumb {
+  background: var(--foreground);
+}
+
+.project-image-index li {
+  flex: 0 0 clamp(10rem, 18vw, 20rem);
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+.project-image-index a {
+  display: block;
+}
+
+.project-image-index a:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 2px;
+}
+
+.project-image-index-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #050505;
+}
+
+.project-image-index a > span {
+  display: block;
+  padding-top: 0.32rem;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.68rem;
+}
+
+.project-image-index a:hover .project-image-index-thumb {
+  opacity: 0.82;
+}
+
 .project-gallery {
   padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--line-strong);
@@ -348,6 +420,7 @@ a {
 
 .project-gallery li {
   min-width: 0;
+  scroll-margin-top: 2.75rem;
 }
 
 .project-gallery li + li {

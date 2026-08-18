@@ -129,11 +129,40 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
           </div>
         </section>
 
+        <nav className="project-image-index" aria-label="Jump to project image">
+          <div className="project-image-index-heading">
+            <span>Image index ({pad(work.images.length)})</span>
+            <span>Scroll →</span>
+          </div>
+          <ol>
+            {work.images.map((image, imageIndex) => (
+              <li key={image.src}>
+                <a
+                  href={`#frame-${pad(imageIndex + 1)}`}
+                  aria-label={`Jump to frame ${pad(imageIndex + 1)}`}
+                >
+                  <div className="project-image-index-thumb">
+                    <Image
+                      src={image.src}
+                      alt=""
+                      fill
+                      sizes="(min-width: 900px) 18vw, 55vw"
+                      className="object-cover"
+                      unoptimized={image.src.endsWith(".gif")}
+                    />
+                  </div>
+                  <span>{pad(imageIndex + 1)}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
         <ol className="project-gallery">
           {work.images.map((image, imageIndex) => {
             const isGif = image.src.endsWith(".gif");
             return (
-              <li key={image.src}>
+              <li key={image.src} id={`frame-${pad(imageIndex + 1)}`}>
                 <div className="project-gallery-label">
                   <span>Frame {pad(imageIndex + 1)}</span>
                   <span>{image.w} × {image.h}</span>
