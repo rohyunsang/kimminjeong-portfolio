@@ -5,6 +5,7 @@ export type Work = {
   title: string;
   short: string;
   year: string;
+  period?: string;
   type: string;
   role: string;
   engine: string;
@@ -24,6 +25,7 @@ export const works: Work[] = [
     "title": "The Forgotten Breath of a Medieval Village",
     "short": "Forgotten Breath",
     "year": "2025",
+    "period": "2025.01 - 2025.04",
     "type": "Personal Project",
     "role": "Environment Art — modeling, texturing, lighting, composition",
     "engine": "Unreal Engine 5",
@@ -31,11 +33,11 @@ export const works: Work[] = [
     "software": [
       "3ds Max",
       "ZBrush",
-      "Marvelous Designer",
-      "Unreal Engine",
-      "Marmoset Toolbag",
       "Substance 3D Painter",
-      "Photoshop"
+      "Unreal Engine 5.3",
+      "Photoshop",
+      "Marvelous Designer",
+      "Marmoset Toolbag"
     ],
     "summary": "First game-ready 3D environment. A semi-realistic medieval village built from a modular kit, composed after a concept painting and layered with references for mood, structure and density. No AI-generated assets.",
     "concept": "https://www.artstation.com/artwork/8bx4vO",

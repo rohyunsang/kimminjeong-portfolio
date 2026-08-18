@@ -68,9 +68,21 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
               <span>Project</span>
               <strong>{work.title}</strong>
             </div>
-            <div>
-              <span>Project ID</span>
-              <strong>{pad(work.no)} — {work.year}</strong>
+            <div className="project-receipt-meta">
+              <div>
+                <span>Period</span>
+                <strong>{work.period ?? work.year}</strong>
+              </div>
+              <div className="project-links">
+                <a href={work.artstation} target="_blank" rel="noreferrer">
+                  View on ArtStation ↗
+                </a>
+                {work.concept && (
+                  <a href={work.concept} target="_blank" rel="noreferrer">
+                    {work.slug === "weind-up" ? "Studio Gravitia ↗" : "Concept reference ↗"}
+                  </a>
+                )}
+              </div>
             </div>
           </div>
 
@@ -115,17 +127,6 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
               <span>Output</span>
               <strong>{pad(work.images.length)} images</strong>
             </div>
-          </div>
-
-          <div className="project-links">
-            <a href={work.artstation} target="_blank" rel="noreferrer">
-              View on ArtStation ↗
-            </a>
-            {work.concept && (
-              <a href={work.concept} target="_blank" rel="noreferrer">
-                {work.slug === "weind-up" ? "Studio Gravitia ↗" : "Concept reference ↗"}
-              </a>
-            )}
           </div>
         </section>
 
