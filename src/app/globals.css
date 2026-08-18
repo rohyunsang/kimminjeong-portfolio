@@ -453,9 +453,11 @@ a {
 }
 
 .project-receipt-meta {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: end;
+  gap: 1rem;
   min-width: 0;
-  flex-direction: column;
 }
 
 .project-receipt-main {
@@ -512,8 +514,8 @@ a {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 1rem;
-  margin-top: auto;
-  padding-top: 0.8rem;
+  margin-top: 0;
+  padding-top: 0;
   font-size: 0.74rem;
   text-decoration: underline;
   text-underline-offset: 0.25em;
