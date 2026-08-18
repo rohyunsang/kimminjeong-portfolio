@@ -347,7 +347,7 @@ a {
 
 .project-cover-overlay {
   position: absolute;
-  inset: 0 clamp(1rem, 3vw, 3rem);
+  inset: 0;
   z-index: 2;
   overflow: hidden;
   background: rgb(247 247 245 / 30%);
