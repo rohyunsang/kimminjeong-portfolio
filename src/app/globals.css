@@ -84,7 +84,7 @@ a {
   grid-column: 3;
   grid-row: 1;
   align-self: end;
-  justify-self: start;
+  justify-self: end;
   font-size: clamp(1.6rem, 2.6vw, 3rem);
   letter-spacing: -0.045em;
   line-height: 1;
