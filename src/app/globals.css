@@ -152,14 +152,16 @@ a {
 
 .work-number {
   position: absolute;
-  top: 0.55rem;
-  left: 0.65rem;
+  top: 0.7rem;
+  left: 0.75rem;
   z-index: 3;
   color: #fff;
-  font-family: var(--font-geist-mono), monospace;
-  font-size: clamp(0.95rem, 1.15vw, 1.2rem);
-  letter-spacing: 0.08em;
-  mix-blend-mode: difference;
+  font-family: var(--font-geist-sans), Helvetica, Arial, sans-serif;
+  font-size: clamp(1.45rem, 2.15vw, 2.4rem);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  text-shadow: 0 1px 6px rgb(0 0 0 / 55%);
 }
 
 .work-specs {
