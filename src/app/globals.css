@@ -133,14 +133,48 @@ a {
   background: #050505;
 }
 
+.work-image-frame::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: clamp(3rem, 4.5vw, 4.75rem);
+  aspect-ratio: 1;
+  background: var(--background);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  transform-origin: right bottom;
+  transition: transform 220ms ease;
+}
+
+.work-image-frame::before {
+  content: "↗";
+  position: absolute;
+  right: 0.32rem;
+  bottom: 0.18rem;
+  z-index: 2;
+  color: var(--foreground);
+  font-size: clamp(0.95rem, 1.35vw, 1.35rem);
+  line-height: 1;
+  transition: transform 220ms ease;
+}
+
+.work-card-link:hover .work-image-frame::after {
+  transform: scale(1.12);
+}
+
+.work-card-link:hover .work-image-frame::before {
+  transform: translate(-0.12rem, -0.12rem);
+}
+
 .work-number {
   position: absolute;
   top: 0.55rem;
   left: 0.65rem;
-  z-index: 1;
+  z-index: 3;
   color: #fff;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 0.7rem;
+  font-size: clamp(0.95rem, 1.15vw, 1.2rem);
   letter-spacing: 0.08em;
   mix-blend-mode: difference;
 }
