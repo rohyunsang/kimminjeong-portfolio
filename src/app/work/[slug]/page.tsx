@@ -62,37 +62,30 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
           />
         </div>
 
-        <div className="project-catalog">
-          <ol className="project-gallery">
-            {work.images.map((image, imageIndex) => {
-              const isGif = image.src.endsWith(".gif");
-              return (
-                <li key={image.src}>
-                  <div className="project-gallery-label">
-                    <span>Frame {pad(imageIndex + 1)}</span>
-                    <span>{image.w} × {image.h}</span>
-                  </div>
-                  <div className="project-gallery-image">
-                    <Image
-                      src={image.src}
-                      alt={`${work.title} — image ${pad(imageIndex + 1)}`}
-                      width={image.w}
-                      height={image.h}
-                      sizes="(min-width: 900px) 34vw, (min-width: 560px) 50vw, 100vw"
-                      className="h-auto w-full"
-                      unoptimized={isGif}
-                    />
-                  </div>
-                </li>
-              );
-            })}
-          </ol>
+        <section className="project-receipt" aria-label="Project information">
+          <div className="project-receipt-top">
+            <div>
+              <span>Project</span>
+              <strong>{work.title}</strong>
+            </div>
+            <div>
+              <span>Project ID</span>
+              <strong>{pad(work.no)} — {work.year}</strong>
+            </div>
+          </div>
 
-          <aside className="project-aside">
-            <div className="project-aside-inner">
-              <p className="project-aside-summary">{work.summary}</p>
+          <div className="project-receipt-main">
+            <div className="project-receipt-description">
+              <span>Description</span>
+              <p>{work.summary}</p>
+            </div>
 
-              <dl className="project-meta">
+            <div className="project-receipt-items">
+              <div className="project-receipt-head">
+                <span>Item</span>
+                <span>Details</span>
+              </div>
+              <dl>
                 <div>
                   <dt>Role</dt>
                   <dd>{work.role}</dd>
@@ -106,28 +99,60 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
                   <dd>{work.duration}</dd>
                 </div>
                 <div>
-                  <dt>Tools</dt>
-                  <dd>{work.software.join(", ")}</dd>
-                </div>
-                <div>
-                  <dt>Images</dt>
-                  <dd>{pad(work.images.length)}</dd>
+                  <dt>Type</dt>
+                  <dd>{work.type}</dd>
                 </div>
               </dl>
-
-              <div className="project-links">
-                <a href={work.artstation} target="_blank" rel="noreferrer">
-                  View on ArtStation ↗
-                </a>
-                {work.concept && (
-                  <a href={work.concept} target="_blank" rel="noreferrer">
-                    {work.slug === "weind-up" ? "Studio Gravitia ↗" : "Concept reference ↗"}
-                  </a>
-                )}
-              </div>
             </div>
-          </aside>
-        </div>
+          </div>
+
+          <div className="project-receipt-total">
+            <div>
+              <span>Tools</span>
+              <strong>{work.software.join(", ")}</strong>
+            </div>
+            <div>
+              <span>Output</span>
+              <strong>{pad(work.images.length)} images</strong>
+            </div>
+          </div>
+
+          <div className="project-links">
+            <a href={work.artstation} target="_blank" rel="noreferrer">
+              View on ArtStation ↗
+            </a>
+            {work.concept && (
+              <a href={work.concept} target="_blank" rel="noreferrer">
+                {work.slug === "weind-up" ? "Studio Gravitia ↗" : "Concept reference ↗"}
+              </a>
+            )}
+          </div>
+        </section>
+
+        <ol className="project-gallery">
+          {work.images.map((image, imageIndex) => {
+            const isGif = image.src.endsWith(".gif");
+            return (
+              <li key={image.src}>
+                <div className="project-gallery-label">
+                  <span>Frame {pad(imageIndex + 1)}</span>
+                  <span>{image.w} × {image.h}</span>
+                </div>
+                <div className="project-gallery-image">
+                  <Image
+                    src={image.src}
+                    alt={`${work.title} — image ${pad(imageIndex + 1)}`}
+                    width={image.w}
+                    height={image.h}
+                    sizes="100vw"
+                    className="h-auto w-full"
+                    unoptimized={isGif}
+                  />
+                </div>
+              </li>
+            );
+          })}
+        </ol>
 
         <nav className="project-pagination" aria-label="Browse projects">
           <Link href={`/work/${previous.slug}`}>
