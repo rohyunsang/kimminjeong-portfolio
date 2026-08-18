@@ -156,6 +156,7 @@ export const works: Work[] = [
     "title": "Props of Medieval Village",
     "short": "Medieval Props",
     "year": "2026",
+    "period": "2025.01 - 2025.04",
     "type": "Personal Project",
     "role": "Prop & modular kit modeling, texturing, presentation",
     "engine": "Unreal Engine 5",
