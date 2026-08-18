@@ -168,7 +168,7 @@ a {
   display: grid;
   grid-template-columns: 0.65fr 1fr 1fr;
   gap: 0.6rem;
-  min-height: 3.2rem;
+  height: 3.2rem;
   padding-top: 0.85rem;
   padding-bottom: 0.85rem;
   border-bottom: 1px solid var(--line);
@@ -647,6 +647,7 @@ a {
   }
 
   .work-specs {
+    height: auto;
     min-height: 0;
   }
 

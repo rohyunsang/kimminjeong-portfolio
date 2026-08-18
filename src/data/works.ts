@@ -156,7 +156,7 @@ export const works: Work[] = [
     "year": "2026",
     "type": "Personal Project",
     "role": "Prop & modular kit modeling, texturing, presentation",
-    "engine": "Unreal Engine 5 / Marmoset Toolbag",
+    "engine": "Unreal Engine 5",
     "duration": "3–4 months",
     "software": [
       "3ds Max",
