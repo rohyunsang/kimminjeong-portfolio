@@ -342,7 +342,7 @@ a {
 }
 
 .project-cover-image {
-  transition: transform 420ms ease;
+  transition: filter 420ms ease, transform 420ms ease;
 }
 
 .project-cover-overlay {
@@ -366,6 +366,7 @@ a {
 
 @media (hover: hover) {
   .project-cover:hover .project-cover-image {
+    filter: blur(3px);
     transform: scale(1.01);
   }
 
