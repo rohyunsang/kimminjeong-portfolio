@@ -342,12 +342,12 @@ a {
 }
 
 .project-cover-image {
-  transition: filter 420ms ease, transform 420ms ease;
+  transition: transform 420ms ease;
 }
 
 .project-cover-overlay {
   position: absolute;
-  inset: 0;
+  inset: 0 clamp(1rem, 3vw, 3rem);
   z-index: 2;
   overflow: hidden;
   background: rgb(247 247 245 / 30%);
@@ -366,7 +366,6 @@ a {
 
 @media (hover: hover) {
   .project-cover:hover .project-cover-image {
-    filter: blur(3px);
     transform: scale(1.01);
   }
 
