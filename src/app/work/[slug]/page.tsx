@@ -4,9 +4,81 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { works } from "@/data/works";
+import { works, type Work } from "@/data/works";
 
 const pad = (n: number) => String(n).padStart(2, "0");
+
+function ProjectReceipt({ work, className = "" }: { work: Work; className?: string }) {
+  return (
+    <section className={`project-receipt ${className}`} aria-label="Project information">
+      <div className="project-receipt-top">
+        <div>
+          <span>Project</span>
+          <strong>{work.title}</strong>
+        </div>
+        <div className="project-receipt-meta">
+          <div>
+            <span>Period</span>
+            <strong>{work.period ?? work.year}</strong>
+          </div>
+          <div className="project-links">
+            <a href={work.artstation} target="_blank" rel="noreferrer">
+              View on ArtStation ↗
+            </a>
+            {work.concept && (
+              <a href={work.concept} target="_blank" rel="noreferrer">
+                {work.slug === "weind-up" ? "Studio Gravitia ↗" : "Concept reference ↗"}
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <div className="project-receipt-main">
+        <div className="project-receipt-description">
+          <span>Description</span>
+          <p>{work.summary}</p>
+        </div>
+
+        <div className="project-receipt-items">
+          <div className="project-receipt-head">
+            <span>Item</span>
+            <span>Details</span>
+          </div>
+          <dl>
+            <div>
+              <dt>Role</dt>
+              <dd>{work.role}</dd>
+            </div>
+            <div>
+              <dt>Engine</dt>
+              <dd>{work.engine}</dd>
+            </div>
+            <div>
+              <dt>Duration</dt>
+              <dd>{work.duration}</dd>
+            </div>
+            <div>
+              <dt>Type</dt>
+              <dd>{work.type}</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <div className="project-receipt-total">
+        <div>
+          <span>Tools</span>
+          <strong>{work.software.join(", ")}</strong>
+        </div>
+        <div>
+          <span>Output</span>
+          <strong>{pad(work.images.length)} images</strong>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export function generateStaticParams() {
   return works.map((work) => ({ slug: work.slug }));
@@ -60,78 +132,12 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
             sizes="100vw"
             className="object-cover project-cover-image"
           />
-          <div className="project-cover-overlay" aria-hidden="true">
-            <p>{work.summary}</p>
+          <div className="project-cover-overlay">
+            <ProjectReceipt work={work} className="project-receipt-overlay" />
           </div>
         </div>
 
-        <section className="project-receipt" aria-label="Project information">
-          <div className="project-receipt-top">
-            <div>
-              <span>Project</span>
-              <strong>{work.title}</strong>
-            </div>
-            <div className="project-receipt-meta">
-              <div>
-                <span>Period</span>
-                <strong>{work.period ?? work.year}</strong>
-              </div>
-              <div className="project-links">
-                <a href={work.artstation} target="_blank" rel="noreferrer">
-                  View on ArtStation ↗
-                </a>
-                {work.concept && (
-                  <a href={work.concept} target="_blank" rel="noreferrer">
-                    {work.slug === "weind-up" ? "Studio Gravitia ↗" : "Concept reference ↗"}
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
-
-          <div className="project-receipt-main">
-            <div className="project-receipt-description">
-              <span>Description</span>
-              <p>{work.summary}</p>
-            </div>
-
-            <div className="project-receipt-items">
-              <div className="project-receipt-head">
-                <span>Item</span>
-                <span>Details</span>
-              </div>
-              <dl>
-                <div>
-                  <dt>Role</dt>
-                  <dd>{work.role}</dd>
-                </div>
-                <div>
-                  <dt>Engine</dt>
-                  <dd>{work.engine}</dd>
-                </div>
-                <div>
-                  <dt>Duration</dt>
-                  <dd>{work.duration}</dd>
-                </div>
-                <div>
-                  <dt>Type</dt>
-                  <dd>{work.type}</dd>
-                </div>
-              </dl>
-            </div>
-          </div>
-
-          <div className="project-receipt-total">
-            <div>
-              <span>Tools</span>
-              <strong>{work.software.join(", ")}</strong>
-            </div>
-            <div>
-              <span>Output</span>
-              <strong>{pad(work.images.length)} images</strong>
-            </div>
-          </div>
-        </section>
+        <ProjectReceipt work={work} className="project-receipt-static" />
 
         <nav className="project-image-index" aria-label="Jump to project image">
           <ol>

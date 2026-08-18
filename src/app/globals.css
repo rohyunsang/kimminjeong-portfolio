@@ -349,21 +349,22 @@ a {
   position: absolute;
   inset: 0;
   z-index: 2;
-  display: flex;
-  align-items: flex-start;
-  padding: clamp(1rem, 2.2vw, 2.5rem);
+  overflow-y: auto;
   background: rgb(247 247 245 / 30%);
   backdrop-filter: blur(6px);
   opacity: 0;
   pointer-events: none;
+  overscroll-behavior: contain;
+  scrollbar-color: var(--foreground) transparent;
+  scrollbar-width: thin;
   transition: opacity 320ms ease;
 }
 
-.project-cover-overlay p {
-  max-width: 48ch;
-  font-size: clamp(1.1rem, 2.15vw, 2.35rem);
-  letter-spacing: -0.035em;
-  line-height: 1.08;
+.project-receipt-overlay {
+  min-height: calc(100% + 3rem);
+  padding: clamp(1rem, 2.2vw, 2.5rem);
+  border-bottom: 0;
+  background: transparent;
 }
 
 @media (hover: hover) {
@@ -374,6 +375,22 @@ a {
 
   .project-cover:hover .project-cover-overlay {
     opacity: 1;
+    pointer-events: auto;
+  }
+
+  .project-cover:focus-within .project-cover-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .project-receipt-static {
+    display: none;
+  }
+}
+
+@media (hover: none) {
+  .project-cover-overlay {
+    display: none;
   }
 }
 
