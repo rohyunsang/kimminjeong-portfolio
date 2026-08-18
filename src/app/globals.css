@@ -145,28 +145,12 @@ a {
   mix-blend-mode: difference;
 }
 
-.work-action-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 0.7rem 0 0.9rem;
-  font-size: clamp(1.1rem, 1.7vw, 1.7rem);
-  line-height: 1;
-}
-
-.work-action-row span:first-child::before {
-  content: "+ ";
-}
-
-.work-card-link:hover .work-action-row span:first-child::before {
-  content: "→ ";
-}
-
 .work-specs {
   display: grid;
   grid-template-columns: 0.65fr 1fr 1fr;
   gap: 0.6rem;
   min-height: 3.2rem;
+  padding-top: 0.85rem;
   padding-bottom: 0.85rem;
   border-bottom: 1px solid var(--line);
   font-size: 0.67rem;
@@ -183,7 +167,7 @@ a {
 
 .work-title {
   margin-top: 0.85rem;
-  font-size: clamp(1.4rem, 2.25vw, 2.35rem);
+  font-size: clamp(1.75rem, 2.75vw, 3rem);
   font-weight: 400;
   letter-spacing: -0.045em;
   line-height: 0.96;

@@ -40,11 +40,6 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className="work-action-row">
-                  <span>View project</span>
-                  <span aria-hidden>↗</span>
-                </div>
-
                 <dl className="work-specs">
                   <div>
                     <dt>Year</dt>
