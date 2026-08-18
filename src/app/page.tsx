@@ -8,7 +8,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <header className="catalog-heading">
         <Link href="/" className="catalog-title" aria-label="Portfolio home">
-          Works
+          Portfolio
         </Link>
         <p className="catalog-count">({works.length})</p>
         <nav className="catalog-nav" aria-label="Primary navigation">

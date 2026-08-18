@@ -5,7 +5,7 @@ export function SiteHeader() {
   return (
     <header className="project-header">
       <Link href="/" className="project-home">
-        Works
+        Portfolio
       </Link>
       <p>{profile.name}</p>
       <nav aria-label="Project navigation">
