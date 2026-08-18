@@ -359,7 +359,7 @@ a {
 
 .project-receipt-overlay {
   min-height: 100%;
-  padding: clamp(1rem, 2.2vw, 2.5rem);
+  padding: clamp(1rem, 2.2vw, 2.5rem) clamp(2rem, 6vw, 6rem);
   border-bottom: 0;
   background: transparent;
 }
