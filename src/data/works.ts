@@ -356,5 +356,5 @@ export const profile = {
   location: "South Korea",
   artstation: "https://waterwoterwater.artstation.com",
   email: "waterwoterwater@gmail.com",
-  tools: ["Unreal Engine 5", "3ds Max", "ZBrush", "Substance 3D Painter", "Marvelous Designer", "Marmoset Toolbag", "Photoshop"],
+  tools: ["Unreal Engine 5", "3ds Max", "ZBrush", "Substance 3D Painter", "Marvelous Designer", "Marmoset Toolbag", "Photoshop", "Blender", "Maya"],
 };
