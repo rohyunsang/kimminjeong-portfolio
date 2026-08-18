@@ -133,34 +133,17 @@ a {
   background: #050505;
 }
 
-.work-image-frame::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  width: clamp(3rem, 4.5vw, 4.75rem);
-  aspect-ratio: 1;
-  background: var(--background);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
-  transform-origin: right bottom;
-  transition: transform 220ms ease;
-}
-
 .work-image-frame::before {
   content: "↗";
   position: absolute;
-  right: 0.32rem;
-  bottom: 0.18rem;
+  right: 0.65rem;
+  bottom: 0.55rem;
   z-index: 2;
-  color: var(--foreground);
-  font-size: clamp(0.95rem, 1.35vw, 1.35rem);
+  color: #fff;
+  font-size: clamp(1.15rem, 1.65vw, 1.65rem);
   line-height: 1;
+  text-shadow: 0 1px 6px rgb(0 0 0 / 55%);
   transition: transform 220ms ease;
-}
-
-.work-card-link:hover .work-image-frame::after {
-  transform: scale(1.12);
 }
 
 .work-card-link:hover .work-image-frame::before {
