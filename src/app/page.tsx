@@ -70,8 +70,8 @@ export default function Home() {
           <h2>About</h2>
           <div className="info-lead">
             <p>
-              <span className="block">Minjeong Kim</span>
-              <span className="block">
+              <span className="info-name">Minjeong Kim</span>
+              <span className="info-tagline">
                 3D Environment Artist creating immersive spaces through atmosphere and storytelling
               </span>
             </p>
@@ -81,7 +81,7 @@ export default function Home() {
               컨셉 아트를 바탕으로 모듈러 에셋과 프랍을 제작하고, 텍스처링·라이팅·씬
               구성까지 이어지는 환경 제작 파이프라인 전반을 다룹니다.
             </p>
-            <p>{profile.tools.join(", ")}</p>
+            <p className="info-tools">{profile.tools.join(", ")}</p>
           </div>
         </section>
 
