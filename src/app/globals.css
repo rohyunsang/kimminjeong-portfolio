@@ -134,7 +134,7 @@ a {
 }
 
 .work-image-frame::before {
-  content: "↗";
+  content: "▶";
   position: absolute;
   right: 0.65rem;
   bottom: 0.55rem;
@@ -147,7 +147,7 @@ a {
 }
 
 .work-card-link:hover .work-image-frame::before {
-  transform: translate(-0.12rem, -0.12rem);
+  transform: scale(1.12);
 }
 
 .work-number {
