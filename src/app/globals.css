@@ -341,6 +341,42 @@ a {
   background: #050505;
 }
 
+.project-cover-image {
+  transition: filter 420ms ease, transform 420ms ease;
+}
+
+.project-cover-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  padding: clamp(1rem, 2.2vw, 2.5rem);
+  background: rgb(247 247 245 / 55%);
+  backdrop-filter: blur(15px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 320ms ease;
+}
+
+.project-cover-overlay p {
+  max-width: 48ch;
+  font-size: clamp(1.1rem, 2.15vw, 2.35rem);
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+@media (hover: hover) {
+  .project-cover:hover .project-cover-image {
+    filter: blur(7px);
+    transform: scale(1.02);
+  }
+
+  .project-cover:hover .project-cover-overlay {
+    opacity: 1;
+  }
+}
+
 .project-image-index {
   padding: 0.45rem 0 0.65rem;
   border-bottom: 1px solid var(--line-strong);

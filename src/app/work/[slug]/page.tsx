@@ -58,8 +58,11 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-cover project-cover-image"
           />
+          <div className="project-cover-overlay" aria-hidden="true">
+            <p>{work.summary}</p>
+          </div>
         </div>
 
         <section className="project-receipt" aria-label="Project information">
