@@ -18,6 +18,7 @@ export default function Home() {
             ArtStation ↗
           </a>
         </nav>
+        <p className="catalog-name">{profile.name}</p>
       </header>
 
       <main>
@@ -70,7 +71,6 @@ export default function Home() {
           <h2>About</h2>
           <div className="info-lead">
             <p>
-              <span className="info-name">Minjeong Kim</span>
               <span className="info-tagline">
                 3D Environment Artist creating immersive spaces through atmosphere and storytelling
               </span>

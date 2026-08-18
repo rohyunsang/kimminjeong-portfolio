@@ -72,10 +72,22 @@ a {
 
 .catalog-nav {
   display: flex;
+  grid-column: 3;
+  grid-row: 1;
   justify-content: flex-end;
   gap: 1.5rem;
   padding-top: 0.65rem;
   font-size: clamp(0.8rem, 1.05vw, 1rem);
+}
+
+.catalog-name {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: end;
+  justify-self: start;
+  font-size: clamp(1.6rem, 2.6vw, 3rem);
+  letter-spacing: -0.045em;
+  line-height: 1;
 }
 
 .catalog-nav a,
@@ -221,13 +233,8 @@ a {
   line-height: 1.02;
 }
 
-.info-name,
 .info-tagline {
   display: block;
-}
-
-.info-name {
-  margin-bottom: 0.65em;
 }
 
 .info-copy {
@@ -447,8 +454,15 @@ a {
 
   .catalog-nav {
     grid-column: 1 / -1;
+    grid-row: auto;
     justify-content: space-between;
     padding-top: 0.75rem;
+  }
+
+  .catalog-name {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    margin-top: 0.75rem;
   }
 
   .work-grid {
