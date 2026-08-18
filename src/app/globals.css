@@ -446,6 +446,7 @@ a {
 }
 
 .project-gallery {
+  padding-right: clamp(1rem, 4vw, 5rem);
   padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--line-strong);
 }
