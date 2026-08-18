@@ -70,9 +70,10 @@ export default function Home() {
           <h2>About</h2>
           <div className="info-lead">
             <p>
-              I’m Minjeong Kim, a 3D Environment Artist who enjoys creating immersive spaces
-              with atmosphere and storytelling. I work across asset creation, scene dressing,
-              and lighting, primarily using 3ds Max and Unreal Engine 5.
+              <span className="block">Minjeong Kim</span>
+              <span className="block">
+                3D Environment Artist creating immersive spaces through atmosphere and storytelling
+              </span>
             </p>
           </div>
           <div className="info-copy">
