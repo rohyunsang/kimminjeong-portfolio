@@ -478,8 +478,13 @@ a {
 }
 
 .project-receipt span {
-  display: block;
-  color: var(--muted);
+  display: inline-block;
+  width: max-content;
+  max-width: 100%;
+  justify-self: start;
+  padding: 0.08rem 0.24rem 0.06rem;
+  background: rgb(23 23 23 / 72%);
+  color: #fff;
   font-family: var(--font-geist-mono), monospace;
   font-size: 0.64rem;
   letter-spacing: 0.06em;
@@ -546,7 +551,16 @@ a {
 }
 
 .project-receipt-items dt {
-  color: var(--muted);
+  width: max-content;
+  max-width: 100%;
+  padding: 0.08rem 0.24rem 0.06rem;
+  background: rgb(23 23 23 / 72%);
+  color: #fff;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .project-receipt-total {
