@@ -130,10 +130,6 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
         </section>
 
         <nav className="project-image-index" aria-label="Jump to project image">
-          <div className="project-image-index-heading">
-            <span>Image index ({pad(work.images.length)})</span>
-            <span>Scroll →</span>
-          </div>
           <ol>
             {work.images.map((image, imageIndex) => (
               <li key={image.src}>
@@ -151,7 +147,6 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
                       unoptimized={image.src.endsWith(".gif")}
                     />
                   </div>
-                  <span>{pad(imageIndex + 1)}</span>
                 </a>
               </li>
             ))}

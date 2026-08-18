@@ -342,19 +342,8 @@ a {
 }
 
 .project-image-index {
-  padding: 0.75rem 0 0.65rem;
+  padding: 0.45rem 0 0.65rem;
   border-bottom: 1px solid var(--line-strong);
-}
-
-.project-image-index-heading {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 0.5rem;
-  color: var(--muted);
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 0.66rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .project-image-index ol {
@@ -400,13 +389,6 @@ a {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: #050505;
-}
-
-.project-image-index a > span {
-  display: block;
-  padding-top: 0.32rem;
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 0.68rem;
 }
 
 .project-image-index a:hover .project-image-index-thumb {
