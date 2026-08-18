@@ -349,19 +349,16 @@ a {
   position: absolute;
   inset: 0;
   z-index: 2;
-  overflow-y: auto;
+  overflow: hidden;
   background: rgb(247 247 245 / 30%);
   backdrop-filter: blur(6px);
   opacity: 0;
   pointer-events: none;
-  overscroll-behavior: contain;
-  scrollbar-color: var(--foreground) transparent;
-  scrollbar-width: thin;
   transition: opacity 320ms ease;
 }
 
 .project-receipt-overlay {
-  min-height: calc(100% + 3rem);
+  min-height: 100%;
   padding: clamp(1rem, 2.2vw, 2.5rem);
   border-bottom: 0;
   background: transparent;
