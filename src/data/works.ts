@@ -39,7 +39,7 @@ export const works: Work[] = [
       "Marvelous Designer",
       "Marmoset Toolbag"
     ],
-    "summary": "First game-ready 3D environment. A semi-realistic medieval village built from a modular kit, composed after a concept painting and layered with references for mood, structure and density. No AI-generated assets.",
+    "summary": "The Forgotten Breath of a Medieval Village is my first 3D game environment project. The scene was built using a modular asset kit, with its composition and atmosphere developed from the referenced concept art. Additional visual references guided the mood, architectural structure, and environmental density, strengthening the scene’s realism and sense of place. Production took approximately three to four months, including iterative refinement. No AI-generated assets were used.",
     "concept": "https://www.artstation.com/artwork/8bx4vO",
     "artstation": "https://www.artstation.com/artwork/DLzPvn",
     "cover": {
