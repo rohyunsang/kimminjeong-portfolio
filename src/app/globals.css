@@ -352,8 +352,8 @@ a {
   display: flex;
   align-items: flex-start;
   padding: clamp(1rem, 2.2vw, 2.5rem);
-  background: rgb(247 247 245 / 55%);
-  backdrop-filter: blur(15px);
+  background: rgb(247 247 245 / 30%);
+  backdrop-filter: blur(6px);
   opacity: 0;
   pointer-events: none;
   transition: opacity 320ms ease;
@@ -368,8 +368,8 @@ a {
 
 @media (hover: hover) {
   .project-cover:hover .project-cover-image {
-    filter: blur(7px);
-    transform: scale(1.02);
+    filter: blur(3px);
+    transform: scale(1.01);
   }
 
   .project-cover:hover .project-cover-overlay {
