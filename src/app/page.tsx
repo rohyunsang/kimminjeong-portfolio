@@ -70,8 +70,9 @@ export default function Home() {
           <h2>About</h2>
           <div className="info-lead">
             <p>
-              {profile.nameKo} is a {profile.headline.toLowerCase()} based in {profile.location}.
-              She builds game-ready environments from concept to final lighting.
+              I’m Minjeong Kim, a 3D Environment Artist who enjoys creating immersive spaces
+              with atmosphere and storytelling. I work across asset creation, scene dressing,
+              and lighting, primarily using 3ds Max and Unreal Engine 5.
             </p>
           </div>
           <div className="info-copy">
