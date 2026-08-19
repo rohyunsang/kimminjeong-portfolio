@@ -117,8 +117,12 @@ a {
   border-right: 1px solid var(--line-strong);
 }
 
-.work-card:last-child {
+.work-card:nth-child(3n) {
   border-right: 0;
+}
+
+.work-card:nth-child(n + 4) {
+  border-top: 1px solid var(--line-strong);
 }
 
 .work-card-link {
@@ -653,9 +657,12 @@ a {
     border-right: 0;
   }
 
-  .work-card:last-child {
-    border-top: 1px solid var(--line-strong);
+  .work-card:nth-child(2n + 1) {
     border-right: 1px solid var(--line-strong);
+  }
+
+  .work-card:nth-child(n + 3) {
+    border-top: 1px solid var(--line-strong);
   }
 
   .info-grid,
@@ -719,7 +726,7 @@ a {
 
   .work-card,
   .work-card:nth-child(2n),
-  .work-card:last-child {
+  .work-card:nth-child(2n + 1) {
     border-right: 0;
   }
 

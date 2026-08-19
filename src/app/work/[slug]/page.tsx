@@ -22,9 +22,11 @@ function ProjectReceipt({ work, className = "" }: { work: Work; className?: stri
             <strong>{work.period ?? work.year}</strong>
           </div>
           <div className="project-links">
-            <a href={work.artstation} target="_blank" rel="noreferrer">
-              View on ArtStation ↗
-            </a>
+            {work.artstation && (
+              <a href={work.artstation} target="_blank" rel="noreferrer">
+                View on ArtStation ↗
+              </a>
+            )}
             {work.concept && (
               <a href={work.concept} target="_blank" rel="noreferrer">
                 {work.slug === "weind-up" ? "Studio Gravitia ↗" : "Concept reference ↗"}

@@ -378,6 +378,43 @@ export const works: Work[] = [
         "h": 1080
       }
     ]
+  },
+  {
+    "slug": "props",
+    "no": 4,
+    "title": "Props",
+    "short": "Props",
+    "year": "2024.05",
+    "period": "2024.05",
+    "type": "Personal Project",
+    "role": "Prop Art — modeling, sculpting, texturing",
+    "engine": "3ds Max / ZBrush",
+    "duration": "2 days each",
+    "software": [
+      "3ds Max",
+      "ZBrush",
+      "Substance 3D Painter"
+    ],
+    "summary": "A personal prop art study featuring a decorative cup and winged statue, created through modeling, sculpting, and texturing.",
+    "concept": "",
+    "artstation": "",
+    "cover": {
+      "src": "/works/props/cup.jpg",
+      "w": 1920,
+      "h": 1080
+    },
+    "images": [
+      {
+        "src": "/works/props/cup.jpg",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "src": "/works/props/statue.jpg",
+        "w": 1920,
+        "h": 1080
+      }
+    ]
   }
 ];
 
