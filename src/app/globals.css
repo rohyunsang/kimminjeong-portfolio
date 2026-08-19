@@ -595,7 +595,7 @@ a {
 
 .project-receipt-overlay .project-summary-ko {
   max-width: none;
-  font-size: clamp(0.46rem, 0.55vw, 0.62rem);
+  font-size: clamp(0.5rem, 0.6vw, 0.68rem);
   white-space: nowrap;
 }
 
