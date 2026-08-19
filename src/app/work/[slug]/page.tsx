@@ -122,25 +122,27 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
       <main className="project-shell">
         <header className="project-title-bar">
           <h1>{work.title}</h1>
-          <p>
-            ({pad(work.no)}) {work.year} · {work.type}
-          </p>
-          <nav className="project-title-nav" aria-label="Browse portfolio projects">
-            <Link
-              href={`/work/${previous.slug}`}
-              aria-label={`Previous project: ${previous.title}`}
-              title={`Previous: ${previous.title}`}
-            >
-              ◀
-            </Link>
-            <Link
-              href={`/work/${next.slug}`}
-              aria-label={`Next project: ${next.title}`}
-              title={`Next: ${next.title}`}
-            >
-              ▶
-            </Link>
-          </nav>
+          <div className="project-title-controls">
+            <nav className="project-title-nav" aria-label="Browse portfolio projects">
+              <Link
+                href={`/work/${previous.slug}`}
+                aria-label={`Previous project: ${previous.title}`}
+                title={`Previous: ${previous.title}`}
+              >
+                ◀
+              </Link>
+              <Link
+                href={`/work/${next.slug}`}
+                aria-label={`Next project: ${next.title}`}
+                title={`Next: ${next.title}`}
+              >
+                ▶
+              </Link>
+            </nav>
+            <p>
+              ({pad(work.no)}) {work.year} · {work.type}
+            </p>
+          </div>
         </header>
 
         <div className="project-cover">
