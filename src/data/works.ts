@@ -272,7 +272,7 @@ export const works: Work[] = [
       "Photoshop"
     ],
     "summary": "Cooperative puzzle game environment. Translated 2D concept art into a realized 3D world in Unreal, focusing on mood, spatial composition and readable gameplay space. Level layout by a dedicated level designer; environment execution and atmospheric direction by me.",
-    "summaryKo": "협동 퍼즐 게임의 환경 작업으로, 2D 컨셉 아트를 Unreal Engine의 3D 공간으로 구현하며 분위기와 플레이 동선의 가독성에 집중했습니다. 저는 환경 제작과 분위기 연출을 담당했으며, 레벨 레이아웃은 전담 디자이너가 맡았습니다.",
+    "summaryKo": "협동 퍼즐 게임의 환경 작업으로, 2D 컨셉 아트를 Unreal Engine의 3D 공간으로 구현하며 분위기와 플레이 동선의 가독성에 집중했습니다. 저는\u00a0환경 제작과 분위기 연출을 담당했으며, 레벨 레이아웃은 전담 디자이너가 맡았습니다.",
     "concept": "https://x.com/Studio_Gravitia",
     "artstation": "https://www.artstation.com/artwork/rlxNzG",
     "cover": {
