@@ -399,6 +399,33 @@ a {
   right: clamp(0.55rem, 2.5vw, 2.75rem);
 }
 
+.project-scroll-top {
+  position: fixed;
+  right: clamp(1rem, 2.1vw, 2rem);
+  bottom: clamp(1rem, 2.1vw, 2rem);
+  z-index: 15;
+  display: grid;
+  width: clamp(3.5rem, 4.5vw, 4.25rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  background: #a8a8a8;
+  color: #fff;
+  font-size: clamp(1.25rem, 1.7vw, 1.6rem);
+  line-height: 1;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.project-scroll-top:hover {
+  background: #888;
+  transform: translateY(-0.15rem);
+}
+
+.project-scroll-top:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 0.25rem;
+}
+
 .project-cover {
   position: relative;
   aspect-ratio: 16 / 9;

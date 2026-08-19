@@ -119,7 +119,7 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
-      <main className="project-shell">
+      <main id="project-top" className="project-shell">
         <nav className="project-side-navigation" aria-label="Browse portfolio projects">
           <Link
             className="project-side-navigation-previous"
@@ -138,6 +138,10 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
             ▶
           </Link>
         </nav>
+
+        <a className="project-scroll-top" href="#project-top" aria-label="Back to top" title="Back to top">
+          △
+        </a>
 
         <header className="project-title-bar">
           <h1>{work.title}</h1>
