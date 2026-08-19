@@ -41,7 +41,7 @@ export const works: Work[] = [
       "Marmoset Toolbag"
     ],
     "summary": "The Forgotten Breath of a Medieval Village is my first 3D game environment project. The scene was built using a modular asset kit, with its composition and atmosphere developed from the referenced concept art. Additional visual references guided the mood, architectural structure, and environmental density, strengthening the scene’s realism and sense of place. Production took approximately three to four months, including iterative refinement. No AI-generated assets were used.",
-    "summaryKo": "모듈러 에셋으로 제작한 첫 3D 중세 마을 환경 작업입니다.",
+    "summaryKo": "모듈러 에셋 키트를 활용한 첫 3D 게임 환경 작업입니다. 컨셉 아트와 레퍼런스를 바탕으로 중세 마을의 분위기와 구조를 다듬었으며, 약 3~4개월의 반복 작업을 거쳐 완성했습니다. AI 생성 에셋은 사용하지 않았습니다.",
     "concept": "https://www.artstation.com/artwork/8bx4vO",
     "artstation": "https://www.artstation.com/artwork/DLzPvn",
     "cover": {
@@ -183,7 +183,7 @@ export const works: Work[] = [
       "Marmoset Toolbag"
     ],
     "summary": "Modular building kit and prop set for the medieval village scene — timber-frame houses, roofs, carts, cloth and dressing assets, presented as breakdowns and turntables. No AI-generated assets.",
-    "summaryKo": "중세 마을용 모듈러 건물과 다양한 프랍을 제작한 개인 작업입니다.",
+    "summaryKo": "중세 마을을 위한 모듈러 건물 키트와 프랍 세트입니다. 목조 주택, 지붕, 수레, 천 등의 에셋을 제작하고 브레이크다운과 턴테이블 형식으로 정리했습니다. AI 생성 에셋은 사용하지 않았습니다.",
     "concept": "",
     "artstation": "https://www.artstation.com/artwork/AZVYlX",
     "cover": {
@@ -272,7 +272,7 @@ export const works: Work[] = [
       "Photoshop"
     ],
     "summary": "Cooperative puzzle game environment. Translated 2D concept art into a realized 3D world in Unreal, focusing on mood, spatial composition and readable gameplay space. Level layout by a dedicated level designer; environment execution and atmospheric direction by me.",
-    "summaryKo": "협동 퍼즐 게임의 3D 환경 제작과 분위기 연출을 담당했습니다.",
+    "summaryKo": "협동 퍼즐 게임의 환경 작업으로, 2D 컨셉 아트를 Unreal Engine의 3D 공간으로 구현하며 분위기와 플레이 동선의 가독성에 집중했습니다. 저는 환경 제작과 분위기 연출을 담당했으며, 레벨 레이아웃은 전담 디자이너가 맡았습니다.",
     "concept": "https://x.com/Studio_Gravitia",
     "artstation": "https://www.artstation.com/artwork/rlxNzG",
     "cover": {
@@ -400,7 +400,7 @@ export const works: Work[] = [
       "Substance 3D Painter"
     ],
     "summary": "These props were created using Maya, 3ds Max, and ZBrush. The project focused on strengthening adaptability across a range of production tools and expanding workflow flexibility, while gaining hands-on experience with a prop creation pipeline designed for real-time environments.",
-    "summaryKo": "다양한 툴로 실시간 환경용 프랍 제작 과정을 경험한 개인 작업입니다.",
+    "summaryKo": "Maya, 3ds Max, ZBrush를 활용한 개인 프랍 작업입니다. 다양한 제작 툴에 대한 적응력과 작업 확장성을 높이고, 실시간 환경에 적합한 프랍 제작 파이프라인을 경험하는 데 집중했습니다.",
     "concept": "",
     "artstation": "",
     "cover": {

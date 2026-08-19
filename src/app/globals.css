@@ -602,12 +602,12 @@ a {
 }
 
 .project-receipt-overlay .project-summary-ko {
-  max-width: none;
-  width: calc(100% + clamp(3rem, 8vw, 8rem));
-  font-size: clamp(1.4rem, 2.35vw, 2.65rem);
-  letter-spacing: -0.04em;
-  line-height: 1.07;
-  white-space: nowrap;
+  max-width: 70rem;
+  width: auto;
+  font-size: clamp(0.7rem, 1.175vw, 1.325rem);
+  letter-spacing: -0.02em;
+  line-height: 1.45;
+  white-space: normal;
 }
 
 .project-links {
