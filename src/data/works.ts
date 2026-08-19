@@ -395,7 +395,7 @@ export const works: Work[] = [
       "ZBrush",
       "Substance 3D Painter"
     ],
-    "summary": "A personal prop art study featuring a decorative cup and winged statue, created through modeling, sculpting, and texturing.",
+    "summary": "These props were created using Maya, 3ds Max, and ZBrush. The project focused on strengthening adaptability across a range of production tools and expanding workflow flexibility, while gaining hands-on experience with a prop creation pipeline designed for real-time environments.",
     "concept": "",
     "artstation": "",
     "cover": {
