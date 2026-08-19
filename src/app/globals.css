@@ -308,6 +308,14 @@ a {
   gap: 1.25rem;
 }
 
+.site-footer {
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.site-footer > span:nth-child(2) {
+  justify-self: center;
+}
+
 .project-header {
   grid-template-columns: 1fr auto 1fr;
   position: sticky;

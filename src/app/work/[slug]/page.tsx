@@ -191,8 +191,7 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
             return (
               <li key={image.src} id={`frame-${pad(imageIndex + 1)}`}>
                 <div className="project-gallery-label">
-                  <span>Frame {pad(imageIndex + 1)}</span>
-                  <span>{image.w} × {image.h}</span>
+                  <span>{pad(imageIndex + 1)}</span>
                 </div>
                 <div className="project-gallery-image">
                   <Image
