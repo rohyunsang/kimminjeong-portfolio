@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "ChosunGu";
+  src: url("/fonts/ChosunGu.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #f7f7f5;
   --foreground: #171717;
@@ -18,7 +26,7 @@
   --color-line-strong: var(--line-strong);
   --color-accent: var(--accent);
   --color-paper: var(--paper);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-geist-sans), "ChosunGu";
   --font-mono: var(--font-geist-mono);
 }
 
@@ -34,7 +42,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Helvetica, Arial, system-ui, sans-serif;
+  font-family: var(--font-geist-sans), "ChosunGu", Helvetica, Arial, system-ui, sans-serif;
   font-feature-settings: "ss01", "cv11";
   -webkit-font-smoothing: antialiased;
 }
@@ -595,7 +603,7 @@ a {
 
 .project-receipt-overlay .project-summary-ko {
   max-width: none;
-  font-size: clamp(0.5rem, 0.6vw, 0.68rem);
+  font-size: clamp(0.58rem, 0.7vw, 0.78rem);
   white-space: nowrap;
 }
 
