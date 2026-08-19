@@ -328,6 +328,21 @@ export const works: Work[] = [
         "h": 1080
       },
       {
+        "src": "/works/weind-up/chapter2-4-5.jpg",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "src": "/works/weind-up/chapter2-5.jpg",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "src": "/works/weind-up/project-description.jpg",
+        "w": 1920,
+        "h": 1080
+      },
+      {
         "src": "/works/weind-up/11.webp",
         "w": 1920,
         "h": 1080
@@ -354,6 +369,11 @@ export const works: Work[] = [
       },
       {
         "src": "/works/weind-up/16.webp",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "src": "/works/weind-up/optimization.jpg",
         "w": 1920,
         "h": 1080
       }
