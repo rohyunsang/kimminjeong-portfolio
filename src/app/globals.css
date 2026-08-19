@@ -301,8 +301,13 @@ a {
   text-decoration-color: var(--foreground);
 }
 
-.contact-link {
+.contact-links {
   justify-self: end;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-link {
   font-size: clamp(1.05rem, 1.35vw, 1.3rem);
 }
 
@@ -799,7 +804,7 @@ a {
     grid-column: 1 / -1;
   }
 
-  .contact-link,
+  .contact-links,
   .site-footer div,
   .project-header nav {
     grid-column: 2;
@@ -887,7 +892,8 @@ a {
     gap: 1.5rem;
   }
 
-  .contact-link {
+  .contact-links {
+    grid-column: 1;
     justify-self: start;
     margin-top: 1.5rem;
   }

@@ -17,6 +17,9 @@ export default function Home() {
           <a href={profile.artstation} target="_blank" rel="noreferrer">
             ArtStation ↗
           </a>
+          <a href={profile.youtube} target="_blank" rel="noreferrer">
+            YouTube ↗
+          </a>
         </nav>
         <p className="catalog-name">{profile.name}</p>
       </header>
@@ -101,9 +104,14 @@ export default function Home() {
           <a href={`mailto:${profile.email}`} className="contact-email">
             {profile.email}
           </a>
-          <a href={profile.artstation} target="_blank" rel="noreferrer" className="contact-link">
-            ArtStation ↗
-          </a>
+          <div className="contact-links">
+            <a href={profile.artstation} target="_blank" rel="noreferrer" className="contact-link">
+              ArtStation ↗
+            </a>
+            <a href={profile.youtube} target="_blank" rel="noreferrer" className="contact-link">
+              YouTube ↗
+            </a>
+          </div>
         </section>
       </main>
 

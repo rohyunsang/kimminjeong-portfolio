@@ -7,6 +7,7 @@ export function SiteFooter() {
       <span>{profile.headline}</span>
       <div>
         <a href={profile.artstation} target="_blank" rel="noreferrer">ArtStation ↗</a>
+        <a href={profile.youtube} target="_blank" rel="noreferrer">YouTube ↗</a>
         <a href={`mailto:${profile.email}`}>Email ↗</a>
       </div>
     </footer>

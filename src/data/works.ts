@@ -429,6 +429,7 @@ export const profile = {
   headline: "3D Environment Artist",
   location: "South Korea",
   artstation: "https://waterwoterwater.artstation.com",
+  youtube: "https://www.youtube.com/@waterwoterwater",
   email: "waterwoterwater@gmail.com",
   tools: ["Unreal Engine 5", "3ds Max", "ZBrush", "Substance 3D Painter", "Marvelous Designer", "Marmoset Toolbag", "Photoshop", "Blender", "Maya"],
 };
