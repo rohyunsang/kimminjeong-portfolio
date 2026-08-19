@@ -593,6 +593,12 @@ a {
   word-break: keep-all;
 }
 
+.project-receipt-overlay .project-summary-ko {
+  max-width: none;
+  font-size: clamp(0.46rem, 0.55vw, 0.62rem);
+  white-space: nowrap;
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
