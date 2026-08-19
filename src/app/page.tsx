@@ -22,6 +22,22 @@ export default function Home() {
       </header>
 
       <main>
+        <section className="home-showreel" aria-label="Medieval Village portfolio showreel">
+          <video
+            className="home-showreel-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            preload="metadata"
+            poster="/works/forgotten-breath/cover.webp"
+          >
+            <source src="/videos/medieval-village-portfolio.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </section>
+
         <section id="work" className="work-grid" aria-label="Selected works">
           {works.map((work) => (
             <article key={work.slug} className="work-card">
