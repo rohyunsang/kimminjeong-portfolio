@@ -125,6 +125,14 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
           <p>
             ({pad(work.no)}) {work.year} · {work.type}
           </p>
+          <Link
+            href={`/work/${next.slug}`}
+            className="project-title-next"
+            aria-label={`Next project: ${next.title}`}
+            title={`Next: ${next.title}`}
+          >
+            ▶
+          </Link>
         </header>
 
         <div className="project-cover">

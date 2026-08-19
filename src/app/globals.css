@@ -332,6 +332,7 @@ a {
 }
 
 .project-title-bar {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
@@ -349,7 +350,22 @@ a {
 
 .project-title-bar p {
   align-self: flex-end;
+  padding-right: 3rem;
   font-size: 0.78rem;
+}
+
+.project-title-next {
+  position: absolute;
+  top: 50%;
+  right: 0.2rem;
+  font-size: clamp(1.6rem, 2.25vw, 2.75rem);
+  line-height: 1;
+  transform: translateY(-50%);
+  transition: transform 180ms ease;
+}
+
+.project-title-next:hover {
+  transform: translateY(-50%) scale(1.1);
 }
 
 .project-cover {
@@ -599,6 +615,7 @@ a {
   font-size: clamp(0.72rem, 0.9vw, 0.88rem);
   line-height: 1.65;
   word-break: keep-all;
+  white-space: pre-line;
 }
 
 .project-receipt-overlay .project-summary-ko {
@@ -607,7 +624,7 @@ a {
   font-size: clamp(0.7rem, 1.175vw, 1.325rem);
   letter-spacing: -0.02em;
   line-height: 1.45;
-  white-space: normal;
+  white-space: pre-line;
 }
 
 .project-links {
