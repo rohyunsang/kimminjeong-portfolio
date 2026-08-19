@@ -604,8 +604,9 @@ a {
 .project-receipt-overlay .project-summary-ko {
   max-width: none;
   width: calc(100% + clamp(3rem, 8vw, 8rem));
-  font-size: clamp(0.64rem, 0.78vw, 0.86rem);
-  letter-spacing: -0.015em;
+  font-size: clamp(1.4rem, 2.35vw, 2.65rem);
+  letter-spacing: -0.04em;
+  line-height: 1.07;
   white-space: nowrap;
 }
 
