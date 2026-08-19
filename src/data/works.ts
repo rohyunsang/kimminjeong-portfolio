@@ -41,7 +41,7 @@ export const works: Work[] = [
       "Marmoset Toolbag"
     ],
     "summary": "The Forgotten Breath of a Medieval Village is my first 3D game environment project. The scene was built using a modular asset kit, with its composition and atmosphere developed from the referenced concept art. Additional visual references guided the mood, architectural structure, and environmental density, strengthening the scene’s realism and sense of place. Production took approximately three to four months, including iterative refinement. No AI-generated assets were used.",
-    "summaryKo": "첫 3D 게임 환경 작업으로, 모듈러 에셋 키트를 활용해 중세 마을을 제작했습니다. 컨셉 아트와 레퍼런스를 바탕으로 분위기, 건축 구조, 환경 밀도를 다듬었으며 약 3~4개월의 반복 작업을 거쳐 완성했습니다. AI 생성 에셋은 사용하지 않았습니다.",
+    "summaryKo": "모듈러 에셋 키트를 활용한 첫 3D 게임 환경 작업입니다. 컨셉 아트와 레퍼런스를 바탕으로 중세 마을의 분위기와 구조를 다듬었으며, 약 3~4개월의 반복 작업을 거쳐 완성했습니다. AI 생성 에셋은 사용하지 않았습니다.",
     "concept": "https://www.artstation.com/artwork/8bx4vO",
     "artstation": "https://www.artstation.com/artwork/DLzPvn",
     "cover": {
@@ -272,7 +272,7 @@ export const works: Work[] = [
       "Photoshop"
     ],
     "summary": "Cooperative puzzle game environment. Translated 2D concept art into a realized 3D world in Unreal, focusing on mood, spatial composition and readable gameplay space. Level layout by a dedicated level designer; environment execution and atmospheric direction by me.",
-    "summaryKo": "협동 퍼즐 게임의 환경 작업으로, 2D 컨셉 아트를 Unreal Engine의 3D 공간으로 구현하며 분위기, 공간 구성, 플레이 동선의 가독성에 집중했습니다. 레벨 레이아웃은 전담 디자이너가 맡았고, 저는 환경 제작과 분위기 연출을 담당했습니다.",
+    "summaryKo": "협동 퍼즐 게임의 환경 작업으로, 2D 컨셉 아트를 Unreal Engine의 3D 공간으로 구현하며 분위기와 플레이 동선의 가독성에 집중했습니다. 저는 환경 제작과 분위기 연출을 담당했으며, 레벨 레이아웃은 전담 디자이너가 맡았습니다.",
     "concept": "https://x.com/Studio_Gravitia",
     "artstation": "https://www.artstation.com/artwork/rlxNzG",
     "cover": {
