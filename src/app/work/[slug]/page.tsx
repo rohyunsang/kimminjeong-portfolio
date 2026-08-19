@@ -120,25 +120,28 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
       <SiteHeader />
 
       <main className="project-shell">
+        <nav className="project-side-navigation" aria-label="Browse portfolio projects">
+          <Link
+            className="project-side-navigation-previous"
+            href={`/work/${previous.slug}`}
+            aria-label={`Previous project: ${previous.title}`}
+            title={`Previous: ${previous.title}`}
+          >
+            ◀
+          </Link>
+          <Link
+            className="project-side-navigation-next"
+            href={`/work/${next.slug}`}
+            aria-label={`Next project: ${next.title}`}
+            title={`Next: ${next.title}`}
+          >
+            ▶
+          </Link>
+        </nav>
+
         <header className="project-title-bar">
           <h1>{work.title}</h1>
           <div className="project-title-controls">
-            <nav className="project-title-nav" aria-label="Browse portfolio projects">
-              <Link
-                href={`/work/${previous.slug}`}
-                aria-label={`Previous project: ${previous.title}`}
-                title={`Previous: ${previous.title}`}
-              >
-                ◀
-              </Link>
-              <Link
-                href={`/work/${next.slug}`}
-                aria-label={`Next project: ${next.title}`}
-                title={`Next: ${next.title}`}
-              >
-                ▶
-              </Link>
-            </nav>
             <p>
               ({pad(work.no)}) {work.year} · {work.type}
             </p>
@@ -199,7 +202,7 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
                     alt={`${work.title} — image ${pad(imageIndex + 1)}`}
                     width={image.w}
                     height={image.h}
-                    sizes="100vw"
+                    sizes="(min-width: 900px) 82vw, 100vw"
                     className="h-auto w-full"
                     unoptimized={isGif}
                   />
