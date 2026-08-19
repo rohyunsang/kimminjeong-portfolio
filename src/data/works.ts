@@ -399,7 +399,7 @@ export const works: Work[] = [
     "concept": "",
     "artstation": "",
     "cover": {
-      "src": "/works/props/cup.jpg",
+      "src": "/works/props/cover.jpg",
       "w": 1920,
       "h": 1080
     },
