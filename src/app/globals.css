@@ -350,22 +350,28 @@ a {
 
 .project-title-bar p {
   align-self: flex-end;
-  padding-right: 3rem;
+  padding-right: 5rem;
   font-size: 0.78rem;
 }
 
-.project-title-next {
+.project-title-nav {
   position: absolute;
   top: 50%;
   right: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
   font-size: clamp(1.6rem, 2.25vw, 2.75rem);
   line-height: 1;
   transform: translateY(-50%);
+}
+
+.project-title-nav a {
   transition: transform 180ms ease;
 }
 
-.project-title-next:hover {
-  transform: translateY(-50%) scale(1.1);
+.project-title-nav a:hover {
+  transform: scale(1.1);
 }
 
 .project-cover {
