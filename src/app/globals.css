@@ -185,6 +185,7 @@ a {
 }
 
 .work-title {
+  min-height: 1.92em;
   margin-top: 0.85rem;
   font-size: clamp(1.75rem, 2.75vw, 3rem);
   font-weight: 400;
@@ -728,6 +729,10 @@ a {
 
   .work-specs {
     height: auto;
+    min-height: 0;
+  }
+
+  .work-title {
     min-height: 0;
   }
 
