@@ -78,6 +78,8 @@ function ProjectReceipt({ work, className = "" }: { work: Work; className?: stri
           <strong>{pad(work.images.length)} images</strong>
         </div>
       </div>
+
+      {work.summaryKo && <p className="project-summary-ko">{work.summaryKo}</p>}
     </section>
   );
 }

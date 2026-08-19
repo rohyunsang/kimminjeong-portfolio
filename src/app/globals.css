@@ -585,6 +585,14 @@ a {
   line-height: 1.35;
 }
 
+.project-summary-ko {
+  max-width: 54rem;
+  margin-top: 1.75rem;
+  font-size: clamp(0.72rem, 0.9vw, 0.88rem);
+  line-height: 1.65;
+  word-break: keep-all;
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
