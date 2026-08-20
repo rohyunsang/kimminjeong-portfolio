@@ -280,7 +280,7 @@ a {
 .info-details {
   display: grid;
   gap: 1.25rem;
-  font-size: clamp(0.82rem, 1vw, 1.05rem);
+  font-size: clamp(0.76rem, 0.9vw, 0.95rem);
   letter-spacing: -0.025em;
   line-height: 1.4;
 }
@@ -294,7 +294,7 @@ a {
   color: #fff;
   font-family: var(--font-geist-mono), monospace;
   font-size: inherit;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.06em;
   line-height: 1.2;
 }
