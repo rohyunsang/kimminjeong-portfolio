@@ -277,9 +277,17 @@ a {
   line-height: 1.45;
 }
 
-.info-tools {
-  font-size: clamp(1.1rem, 1.45vw, 1.5rem);
+.info-details {
+  display: grid;
+  gap: 1.25rem;
+  font-size: clamp(0.82rem, 1vw, 1.05rem);
   letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.info-details strong {
+  font-size: clamp(1.1rem, 1.45vw, 1.5rem);
+  font-weight: 700;
   line-height: 1.25;
 }
 
