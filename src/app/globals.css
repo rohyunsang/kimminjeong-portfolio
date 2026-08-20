@@ -139,8 +139,7 @@ a {
 }
 
 .home-showreel {
-  padding: 0.38rem;
-  border-top: 1px solid var(--line-strong);
+  padding: 0 0.38rem 0.38rem;
   background: #050505;
 }
 

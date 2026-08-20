@@ -33,7 +33,7 @@ export default function Home() {
         <Link href="/" className="catalog-title" aria-label="Portfolio home">
           Portfolio
         </Link>
-        <p className="catalog-count">({works.length + upcomingWorks.length})</p>
+        <p className="catalog-count">({works.length})</p>
         <nav className="catalog-nav" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
