@@ -4,16 +4,24 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { profile, works } from "@/data/works";
 
 const tools = [
-  { name: "Unreal Engine 5", logo: "/tools/unreal.png" },
-  { name: "3ds Max", logo: "/tools/3ds-max.png" },
-  { name: "ZBrush", logo: "/tools/zbrush.png" },
-  { name: "Substance 3D Painter", logo: "/tools/substance-3d-painter.png" },
-  { name: "Maya", logo: "/tools/maya.png" },
-  { name: "Blender", logo: "/tools/blender.png" },
-  { name: "Marvelous Designer", logo: "/tools/marvelous-designer.png" },
-  { name: "Marmoset Toolbag", logo: "/tools/marmoset-toolbag.png" },
-  { name: "Photoshop", logo: "/tools/photoshop.png" },
-  { name: "GitHub", logo: "/tools/github.png" },
+  { name: "Unreal Engine 5", role: "SCENE DRESSING · LIGHTING", logo: "/tools/unreal.png" },
+  { name: "3ds Max", role: "MAIN MODELING", logo: "/tools/3ds-max.png" },
+  { name: "ZBrush", role: "HIGH-POLY SCULPTING", logo: "/tools/zbrush.png" },
+  {
+    name: "Substance 3D Painter",
+    role: "PBR TEXTURING",
+    logo: "/tools/substance-3d-painter.png",
+  },
+  { name: "Maya", role: "MODELING", logo: "/tools/maya.png" },
+  { name: "Blender", role: "MODELING", logo: "/tools/blender.png" },
+  { name: "Marmoset Toolbag", role: "BAKING · RENDERING", logo: "/tools/marmoset-toolbag.png" },
+  {
+    name: "Marvelous Designer",
+    role: "CLOTH SIMULATION",
+    logo: "/tools/marvelous-designer.png",
+  },
+  { name: "Photoshop", role: "TEXTURE EDITING", logo: "/tools/photoshop.png" },
+  { name: "GitHub", role: "TEAM COLLABORATION", logo: "/tools/github.png" },
 ];
 
 export default function Home() {
@@ -122,7 +130,8 @@ export default function Home() {
                       <span className="tool-logo">
                         <Image src={tool.logo} alt="" width={900} height={900} sizes="72px" />
                       </span>
-                      <span>{tool.name}</span>
+                      <span className="tool-name">{tool.name}</span>
+                      <span className="tool-role">{tool.role}</span>
                     </li>
                   ))}
                 </ul>
