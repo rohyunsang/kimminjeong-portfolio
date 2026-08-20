@@ -192,7 +192,26 @@ a {
   transition: transform 500ms ease;
 }
 
+.work-card-preview {
+  position: absolute;
+  inset: 0;
+}
+
+.work-card-poster {
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 180ms ease, transform 500ms ease;
+}
+
+.work-card-poster.is-hidden {
+  opacity: 0;
+}
+
 .work-card-link:hover .work-card-video {
+  transform: scale(1.015);
+}
+
+.work-card-link:hover .work-card-poster {
   transform: scale(1.015);
 }
 
@@ -693,6 +712,17 @@ a {
   opacity: 0.82;
 }
 
+.project-image-index-video::after {
+  content: "▶";
+  position: absolute;
+  right: 0.45rem;
+  bottom: 0.35rem;
+  z-index: 2;
+  color: #fff;
+  font-size: 0.85rem;
+  text-shadow: 0 1px 5px rgb(0 0 0 / 65%);
+}
+
 .project-gallery {
   width: min(82vw, 82rem);
   margin: 0 auto;
@@ -720,6 +750,15 @@ a {
 .project-gallery-image {
   overflow: hidden;
   background: #050505;
+}
+
+.project-gallery-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #050505;
+  object-fit: cover;
 }
 
 .project-receipt {

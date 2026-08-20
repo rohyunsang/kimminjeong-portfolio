@@ -1,4 +1,5 @@
 export type WorkImage = { src: string; w: number; h: number };
+export type WorkVideo = { src: string; poster: string; w: number; h: number };
 export type Work = {
   slug: string;
   no: number;
@@ -16,6 +17,7 @@ export type Work = {
   concept: string;
   artstation: string;
   cover: WorkImage;
+  video?: WorkVideo;
   images: WorkImage[];
 };
 
@@ -48,6 +50,12 @@ export const works: Work[] = [
       "src": "/works/forgotten-breath/cover.webp",
       "w": 1920,
       "h": 1050
+    },
+    "video": {
+      "src": "/videos/medieval-village-portfolio.mp4",
+      "poster": "/works/forgotten-breath/cover.webp",
+      "w": 1920,
+      "h": 1080
     },
     "images": [
       {

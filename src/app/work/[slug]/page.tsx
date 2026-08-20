@@ -4,9 +4,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { works, type Work } from "@/data/works";
+import { works, type Work, type WorkImage, type WorkVideo } from "@/data/works";
 
 const pad = (n: number) => String(n).padStart(2, "0");
+const isWorkVideo = (item: WorkImage | WorkVideo): item is WorkVideo => "poster" in item;
 
 function ProjectReceipt({ work, className = "" }: { work: Work; className?: string }) {
   return (
@@ -114,6 +115,7 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
   const work = works[index];
   const previous = works[(index - 1 + works.length) % works.length];
   const next = works[(index + 1) % works.length];
+  const galleryItems = work.video ? [work.video, ...work.images] : work.images;
 
   return (
     <div className="min-h-screen bg-background">
@@ -170,46 +172,65 @@ export default async function WorkPage({ params }: PageProps<"/work/[slug]">) {
 
         <nav className="project-image-index" aria-label="Jump to project image">
           <ol>
-            {work.images.map((image, imageIndex) => (
-              <li key={image.src}>
+            {galleryItems.map((item, imageIndex) => {
+              const isVideo = isWorkVideo(item);
+              return (
+              <li key={item.src}>
                 <a
                   href={`#frame-${pad(imageIndex + 1)}`}
                   aria-label={`Jump to frame ${pad(imageIndex + 1)}`}
                 >
-                  <div className="project-image-index-thumb">
+                  <div
+                    className={`project-image-index-thumb ${isVideo ? "project-image-index-video" : ""}`}
+                  >
                     <Image
-                      src={image.src}
+                      src={isVideo ? item.poster : item.src}
                       alt=""
                       fill
                       sizes="(min-width: 900px) 18vw, 55vw"
                       className="object-cover"
-                      unoptimized={image.src.endsWith(".gif")}
+                      unoptimized={!isVideo && item.src.endsWith(".gif")}
                     />
                   </div>
                 </a>
               </li>
-            ))}
+              );
+            })}
           </ol>
         </nav>
 
         <ol className="project-gallery">
-          {work.images.map((image, imageIndex) => {
-            const isGif = image.src.endsWith(".gif");
+          {galleryItems.map((item, imageIndex) => {
+            const isVideo = isWorkVideo(item);
+            const isGif = !isVideo && item.src.endsWith(".gif");
             return (
-              <li key={image.src} id={`frame-${pad(imageIndex + 1)}`}>
+              <li key={item.src} id={`frame-${pad(imageIndex + 1)}`}>
                 <div className="project-gallery-label">
                   <span>{pad(imageIndex + 1)}</span>
                 </div>
                 <div className="project-gallery-image">
-                  <Image
-                    src={image.src}
-                    alt={`${work.title} — image ${pad(imageIndex + 1)}`}
-                    width={image.w}
-                    height={image.h}
-                    sizes="(min-width: 900px) 82vw, 100vw"
-                    className="h-auto w-full"
-                    unoptimized={isGif}
-                  />
+                  {isVideo ? (
+                    <video
+                      className="project-gallery-video"
+                      controls
+                      playsInline
+                      preload="metadata"
+                      poster={item.poster}
+                      aria-label={`${work.title} — video ${pad(imageIndex + 1)}`}
+                    >
+                      <source src={item.src} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <Image
+                      src={item.src}
+                      alt={`${work.title} — image ${pad(imageIndex + 1)}`}
+                      width={item.w}
+                      height={item.h}
+                      sizes="(min-width: 900px) 82vw, 100vw"
+                      className="h-auto w-full"
+                      unoptimized={isGif}
+                    />
+                  )}
                 </div>
               </li>
             );

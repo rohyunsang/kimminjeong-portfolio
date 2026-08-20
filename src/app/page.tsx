@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HoverVideoPreview } from "@/components/HoverVideoPreview";
 import { SiteFooter } from "@/components/SiteFooter";
 import { profile, works } from "@/data/works";
 
@@ -71,18 +72,11 @@ export default function Home() {
               <Link href={`/work/${work.slug}`} className="work-card-link group">
                 <div className="work-image-frame">
                   {work.no === 1 ? (
-                    <video
-                      className="work-card-video"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="metadata"
+                    <HoverVideoPreview
+                      src="/videos/medieval-village-portfolio.mp4"
                       poster={work.cover.src}
-                      aria-label={`${work.title} preview`}
-                    >
-                      <source src="/videos/medieval-village-portfolio.mp4" type="video/mp4" />
-                    </video>
+                      alt={`${work.title} — cover`}
+                    />
                   ) : (
                     <Image
                       src={work.cover.src}
