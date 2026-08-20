@@ -21,6 +21,7 @@ export default function Home() {
             YouTube ↗
           </a>
         </nav>
+        <p className="catalog-status">OPEN TO WORK — 3D ENVIRONMENT ARTIST</p>
         <p className="catalog-name">{profile.name}</p>
       </header>
 

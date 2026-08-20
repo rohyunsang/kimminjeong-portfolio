@@ -88,6 +88,17 @@ a {
   font-size: clamp(0.8rem, 1.05vw, 1rem);
 }
 
+.catalog-status {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: center;
+  justify-self: end;
+  font-size: clamp(0.68rem, 0.82vw, 0.8rem);
+  letter-spacing: 0.025em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 .catalog-name {
   grid-column: 3;
   grid-row: 1;
@@ -787,6 +798,13 @@ a {
     grid-column: 1 / -1;
     grid-row: auto;
     margin-top: 0.75rem;
+  }
+
+  .catalog-status {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    justify-self: start;
+    margin-top: 0.4rem;
   }
 
   .work-grid {
