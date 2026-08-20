@@ -56,16 +56,6 @@ export const works: Work[] = [
         "h": 1400
       },
       {
-        "src": "/works/forgotten-breath/project-description.jpg",
-        "w": 1920,
-        "h": 1080
-      },
-      {
-        "src": "/works/forgotten-breath/scene-building-process.jpg",
-        "w": 1920,
-        "h": 1080
-      },
-      {
         "src": "/works/forgotten-breath/02.jpg",
         "w": 2560,
         "h": 1400
@@ -157,6 +147,16 @@ export const works: Work[] = [
       },
       {
         "src": "/works/forgotten-breath/20.webp",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "src": "/works/forgotten-breath/project-description.jpg",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "src": "/works/forgotten-breath/scene-building-process.jpg",
         "w": 1920,
         "h": 1080
       }
