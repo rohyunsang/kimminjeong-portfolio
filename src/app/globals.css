@@ -96,10 +96,9 @@ a {
   display: flex;
   align-items: center;
   gap: 0.48rem;
-  color: #00dca6;
-  font-family: var(--font-geist-mono), monospace;
+  color: var(--foreground);
   font-size: clamp(0.68rem, 0.82vw, 0.8rem);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.025em;
   line-height: 1;
   white-space: nowrap;
 }
@@ -979,7 +978,7 @@ a {
   .catalog-status {
     gap: 0.4rem;
     font-size: 0.62rem;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.025em;
   }
 
   .catalog-status::before {
