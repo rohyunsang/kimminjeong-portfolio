@@ -139,7 +139,7 @@ a {
 }
 
 .home-showreel {
-  padding: 0 0.38rem 0.38rem;
+  padding: 0 0.38rem;
   background: #050505;
 }
 
@@ -154,7 +154,6 @@ a {
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--line-strong);
   border-bottom: 1px solid var(--line-strong);
 }
 
