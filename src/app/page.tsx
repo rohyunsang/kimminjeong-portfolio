@@ -3,6 +3,19 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/SiteFooter";
 import { profile, works } from "@/data/works";
 
+const tools = [
+  { name: "Unreal Engine 5", logo: "/tools/unreal.png" },
+  { name: "3ds Max", logo: "/tools/3ds-max.png" },
+  { name: "ZBrush", logo: "/tools/zbrush.png" },
+  { name: "Substance 3D Painter", logo: "/tools/substance-3d-painter.png" },
+  { name: "Maya", logo: "/tools/maya.png" },
+  { name: "Blender", logo: "/tools/blender.png" },
+  { name: "Marvelous Designer", logo: "/tools/marvelous-designer.png" },
+  { name: "Marmoset Toolbag", logo: "/tools/marmoset-toolbag.png" },
+  { name: "Photoshop", logo: "/tools/photoshop.png" },
+  { name: "GitHub", logo: "/tools/github.png" },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -97,22 +110,23 @@ export default function Home() {
               구성까지 이어지는 환경 제작 파이프라인 전반을 다룹니다.
             </p>
             <div className="info-details">
-              <p>
-                <strong>EXPERTISE</strong>
-                <br />
-                <span className="info-details-line">
+              <div className="tools-section">
+                <strong>TOOLS</strong>
+                <p className="tools-expertise">
                   Environment Modeling · Modular Assets · Prop Production · PBR Texturing · Scene
                   Dressing · Lighting · Optimization
-                </span>
-              </p>
-              <p>
-                <strong>TOOLS</strong>
-                <br />
-                <span className="info-details-line">
-                  Unreal Engine 5 · 3ds Max · ZBrush · Substance 3D Painter · Maya · Blender ·
-                  Marvelous Designer · Marmoset Toolbag · Photoshop
-                </span>
-              </p>
+                </p>
+                <ul className="tools-grid" aria-label="Software tools">
+                  {tools.map((tool) => (
+                    <li key={tool.name} className="tool-item">
+                      <span className="tool-logo">
+                        <Image src={tool.logo} alt="" width={900} height={900} sizes="72px" />
+                      </span>
+                      <span>{tool.name}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
