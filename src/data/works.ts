@@ -40,8 +40,8 @@ export const works: Work[] = [
       "Marvelous Designer",
       "Marmoset Toolbag"
     ],
-    "summary": "The Forgotten Breath of a Medieval Village is my first 3D game environment project. The scene was built using a modular asset kit, with its composition and atmosphere developed from the referenced concept art. Additional visual references guided the mood, architectural structure, and environmental density, strengthening the scene’s realism and sense of place. Production took approximately three to four months, including iterative refinement. No AI-generated assets were used.",
-    "summaryKo": "'중세 마을의 잊힌 숨결(The Forgotten Breath of a Medieval Village)'은 저의 첫 3D 게임 환경 제작 프로젝트입니다.\n모듈러 에셋 키트를 활용하여 구축되었으며, 구도와 분위기는 참고용 컨셉 아트를 바탕으로 발전시켰습니다.\n추가적인 시각적 자료를 통해 전체적인 무드, 건축적 구조, 환경적 밀도 등을 설정함으로써 장면의 사실감과 장소감을 한층 높였습니다.\n제작에는 반복적인 수정 및 보완 과정을 포함하여 약 3~4개월이 소요되었습니다.\nAI로 생성된 에셋은 일절 사용하지 않았습니다.",
+    "summary": "The Forgotten Breath of a Medieval Village is my first 3D game environment project. Based on concept art, I created modular assets and used visual references to enhance the scene’s atmosphere and realism. The project took approximately four months to complete, and no AI-generated assets were used.",
+    "summaryKo": "The Forgotten Breath of a Medieval Village는 저의 첫 3D 게임 배경 프로젝트입니다.\n콘셉트 아트를 바탕으로 모듈러 에셋을 제작하고, 다양한 레퍼런스를 활용해 공간의 분위기와 현실감을 높였습니다.\n약 4개월 동안 제작했으며, AI 생성 에셋은 사용하지 않았습니다.",
     "concept": "https://www.artstation.com/artwork/8bx4vO",
     "artstation": "https://www.artstation.com/artwork/DLzPvn",
     "cover": {
