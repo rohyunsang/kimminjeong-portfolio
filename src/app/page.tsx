@@ -99,16 +99,18 @@ export default function Home() {
               <p>
                 <strong>EXPERTISE</strong>
                 <br />
-                Environment Modeling · Modular Assets · Prop Production
-                <br />
-                PBR Texturing · Scene Dressing · Lighting · Optimization
+                <span className="info-details-line">
+                  Environment Modeling · Modular Assets · Prop Production · PBR Texturing · Scene
+                  Dressing · Lighting · Optimization
+                </span>
               </p>
               <p>
                 <strong>TOOLS</strong>
                 <br />
-                Unreal Engine 5 · 3ds Max · ZBrush · Substance 3D Painter
-                <br />
-                Maya · Blender · Marvelous Designer · Marmoset Toolbag · Photoshop
+                <span className="info-details-line">
+                  Unreal Engine 5 · 3ds Max · ZBrush · Substance 3D Painter · Maya · Blender ·
+                  Marvelous Designer · Marmoset Toolbag · Photoshop
+                </span>
               </p>
             </div>
           </div>
