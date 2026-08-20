@@ -329,6 +329,14 @@ a {
   min-width: 0;
 }
 
+.tools-divider {
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  background: var(--line);
+}
+
 .tools-expertise {
   margin-top: 0.42rem;
 }
