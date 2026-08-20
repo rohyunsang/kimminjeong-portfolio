@@ -26,7 +26,7 @@ export const works: Work[] = [
     "slug": "forgotten-breath",
     "no": 1,
     "title": "The Forgotten Breath of a Medieval Village",
-    "short": "Forgotten Breath",
+    "short": "The Forgotten Breath of a Medieval Village",
     "year": "2025",
     "period": "2025.01 - 2025.04",
     "type": "Personal Project",
