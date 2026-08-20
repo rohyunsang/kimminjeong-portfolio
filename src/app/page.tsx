@@ -119,7 +119,7 @@ export default function Home() {
             </p>
             <div className="info-details">
               <div className="tools-section">
-                <h3 className="tools-title">TOOLS</h3>
+                <strong>TOOLS</strong>
                 <p className="tools-expertise">
                   Environment Modeling · Modular Assets · Prop Production · PBR Texturing · Scene
                   Dressing · Lighting · Optimization
