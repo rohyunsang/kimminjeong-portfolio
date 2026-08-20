@@ -407,8 +407,8 @@ export const works: Work[] = [
       "ZBrush",
       "Substance 3D Painter"
     ],
-    "summary": "These props were created using Maya, 3ds Max, and ZBrush. The project focused on strengthening adaptability across a range of production tools and expanding workflow flexibility, while gaining hands-on experience with a prop creation pipeline designed for real-time environments.",
-    "summaryKo": "Maya, 3ds Max, ZBrush를 활용한 개인 프랍 작업입니다.\n다양한 제작 툴에 대한 적응력과 작업 확장성을 높이고, 실시간 환경에 적합한 프랍 제작 파이프라인을 경험하는 데 집중했습니다.",
+    "summary": "These props were created using 3ds Max and ZBrush. The project focused on strengthening adaptability across a range of production tools and expanding workflow flexibility, while gaining hands-on experience with a prop creation pipeline designed for real-time environments.",
+    "summaryKo": "3ds Max, ZBrush를 활용한 개인 프랍 작업입니다.\n다양한 제작 툴에 대한 적응력과 작업 확장성을 높이고, 실시간 환경에 적합한 프랍 제작 파이프라인을 경험하는 데 집중했습니다.",
     "concept": "",
     "artstation": "",
     "cover": {
