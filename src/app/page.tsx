@@ -12,16 +12,16 @@ const tools = [
     role: "PBR TEXTURING",
     logo: "/tools/substance-3d-painter.png",
   },
-  { name: "Maya", role: "MODELING", logo: "/tools/maya.png" },
-  { name: "Blender", role: "MODELING", logo: "/tools/blender.png" },
+  { name: "Photoshop", role: "TEXTURE EDITING", logo: "/tools/photoshop.png" },
+  { name: "GitHub", role: "TEAM COLLABORATION", logo: "/tools/github.png" },
   { name: "Marmoset Toolbag", role: "BAKING · RENDERING", logo: "/tools/marmoset-toolbag.png" },
   {
     name: "Marvelous Designer",
     role: "CLOTH SIMULATION",
     logo: "/tools/marvelous-designer.png",
   },
-  { name: "Photoshop", role: "TEXTURE EDITING", logo: "/tools/photoshop.png" },
-  { name: "GitHub", role: "TEAM COLLABORATION", logo: "/tools/github.png" },
+  { name: "Maya", role: "MODELING", logo: "/tools/maya.png" },
+  { name: "Blender", role: "MODELING", logo: "/tools/blender.png" },
 ];
 
 export default function Home() {
@@ -119,7 +119,7 @@ export default function Home() {
             </p>
             <div className="info-details">
               <div className="tools-section">
-                <strong>TOOLS</strong>
+                <h3 className="tools-title">TOOLS</h3>
                 <p className="tools-expertise">
                   Environment Modeling · Modular Assets · Prop Production · PBR Texturing · Scene
                   Dressing · Lighting · Optimization
