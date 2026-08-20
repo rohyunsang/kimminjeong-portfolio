@@ -68,14 +68,28 @@ export default function Home() {
             <article key={work.slug} className="work-card">
               <Link href={`/work/${work.slug}`} className="work-card-link group">
                 <div className="work-image-frame">
-                  <Image
-                    src={work.cover.src}
-                    alt={`${work.title} — cover`}
-                    fill
-                    sizes="(min-width: 900px) 34vw, (min-width: 560px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-[1.015]"
-                    priority={work.no === 1}
-                  />
+                  {work.no === 1 ? (
+                    <video
+                      className="work-card-video"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                      poster={work.cover.src}
+                      aria-label={`${work.title} preview`}
+                    >
+                      <source src="/videos/medieval-village-portfolio.mp4" type="video/mp4" />
+                    </video>
+                  ) : (
+                    <Image
+                      src={work.cover.src}
+                      alt={`${work.title} — cover`}
+                      fill
+                      sizes="(min-width: 900px) 34vw, (min-width: 560px) 50vw, 100vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.015]"
+                    />
+                  )}
                   <span className="work-number" aria-hidden>
                     {String(work.no).padStart(2, "0")}
                   </span>
