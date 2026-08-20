@@ -24,6 +24,8 @@ const tools = [
   { name: "Blender", role: "MODELING", logo: "/tools/blender.png" },
 ];
 
+const upcomingWorks = [5, 6];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -31,7 +33,7 @@ export default function Home() {
         <Link href="/" className="catalog-title" aria-label="Portfolio home">
           Portfolio
         </Link>
-        <p className="catalog-count">({works.length})</p>
+        <p className="catalog-count">({works.length + upcomingWorks.length})</p>
         <nav className="catalog-nav" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
@@ -113,6 +115,19 @@ export default function Home() {
                 <h2 className="work-title">{work.title}</h2>
                 <p className="work-summary">{work.summary}</p>
               </Link>
+            </article>
+          ))}
+          {upcomingWorks.map((number) => (
+            <article key={number} className="work-card work-card-upcoming">
+              <div className="work-card-link work-card-placeholder">
+                <div className="work-image-frame work-image-placeholder">
+                  <span className="work-number" aria-hidden>
+                    {String(number).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="work-specs work-specs-empty" aria-hidden />
+                <h2 className="work-title">To be continue...</h2>
+              </div>
             </article>
           ))}
         </section>
