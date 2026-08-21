@@ -9,7 +9,7 @@
 }
 
 :root {
-  --background: #f7f7f5;
+  --background: #dde0e6;
   --foreground: #171717;
   --muted: #666662;
   --line: #b9b9b3;
@@ -616,7 +616,7 @@ a {
   inset: 0;
   z-index: 2;
   overflow: hidden;
-  background: rgb(247 247 245 / 30%);
+  background: rgb(221 224 230 / 30%);
   backdrop-filter: blur(6px);
   opacity: 0;
   pointer-events: none;
